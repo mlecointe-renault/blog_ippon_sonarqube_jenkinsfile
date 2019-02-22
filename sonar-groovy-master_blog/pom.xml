@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.sonarsource.parent</groupId>
+    <artifactId>parent</artifactId>
+    <version>36</version>
+  </parent>
+
+  <groupId>org.sonarsource.groovy</groupId>
+  <artifactId>groovy</artifactId>
+  <version>1.6-RC2-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Sonar Groovy</name>
+  <inceptionYear>2010</inceptionYear>
+  <organization>
+    <name>SonarSource</name>
+    <url>http://www.sonarsource.com</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>GNU LGPL 3</name>
+      <url>http://www.gnu.org/licenses/lgpl.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>pmayweg</id>
+      <name>Patrick Mayweg</name>
+    </developer>
+    <developer>
+      <id>m-g-sonar</id>
+      <name>Michael Gumowski</name>
+    </developer>
+    <developer>
+      <id>benzonico</id>
+      <name>Nicolas Peru</name>
+    </developer>
+  </developers>
+
+  <modules>
+    <module>sonar-groovy-plugin</module>
+    <module>groovy-jacoco-previous</module>
+  </modules>
+
+  <scm>
+    <connection>scm:git:git@github.com:pmayweg/sonar-groovy.git</connection>
+    <developerConnection>scm:git:git@github.com:pmayweg/sonar-groovy.git</developerConnection>
+    <url>https://github.com/pmayweg/sonar-groovy</url>
+    <tag>HEAD</tag>
+  </scm>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/pmayweg/sonar-groovy/issues</url>
+  </issueManagement>
+  
+  <properties>
+    <sonar.version>5.6</sonar.version>
+    <jacoco.previous.version>0.7.4.201502262128</jacoco.previous.version>
+    <jacoco.version>0.7.5.201505241946</jacoco.version>
+    <groovy.version>2.4.4</groovy.version>
+    <orchestrator.version>3.11</orchestrator.version>
+    <!-- used for deployment to SonarSource Artifactory -->
+    <gitRepositoryName>sonar-groovy</gitRepositoryName>
+  </properties>
+
+</project>

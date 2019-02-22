@@ -1,0 +1,12 @@
+
+* {CheckUserInputInNode} Rule
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  <Since CodeNarc 0.24>
+
+  Check that there is no 'input' statement in a 'node' block.
+
+  Example of violations:
+
+-------------------------------------------------------------------------------
+    // TODO: Add examples
+-------------------------------------------------------------------------------
