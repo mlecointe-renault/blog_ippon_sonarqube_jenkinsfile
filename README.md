@@ -1,4 +1,4 @@
-# blog_ippon_sonarqube_jenkinsfile
+#  sonarqube and jenkinsfile
 Code source du tuto Jenkinsfile with Sonarqube !
 
 In **CodeNarc-0.25.2_blog**, run **gradlew install -x test -x signArchives**
@@ -15,4 +15,4 @@ Use the sample file **jenkinsfile** in a project, then analyse :
 
 or
 
-`mvn -U clean package sonar:sonar -Dsonar.sources=. -Dsonar.inclusions=*enkins*,src/main/** -Dsonar.exclusions=/target/**`
+```mvn -U clean package sonar:sonar -Dsonar.sources=. -Dsonar.inclusions=*enkins*,src/main/** -Dsonar.exclusions=/target/**```
